@@ -1,5 +1,5 @@
 # Reshift Essential
-Material do Treinamento do Redshift Essential
+Conteúdo programático do treinamento!
 
 ## Capítulo 01 - Primeiros passos com o Amazon Redshift
 - Introdução ao Amazon Redshift
