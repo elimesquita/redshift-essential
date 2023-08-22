@@ -1,4 +1,10 @@
 # Reshift Essential
+
+![amazon-redshift](https://github.com/elimesquita/redshift-essential/assets/87777462/fcbdaad2-22d6-4ad2-b3f5-03771010b30f)
+
+
+
+
 Conteúdo programático do treinamento!
 
 # Pré-Requisitos
