@@ -1,6 +1,11 @@
 # Reshift Essential
 Conteúdo programático do treinamento!
 
+# Pré-Requisitos
+## Criar sua conta na AWS:
+  - Vídeo Explicativo: https://www.youtube.com/watch?v=t7UT6xEX0_0
+    
+
 ## Capítulo 01 - Primeiros passos com o Amazon Redshift
 - Introdução ao Amazon Redshift
 - Conhecendo a Arquitetura do Redshift
