@@ -1,0 +1,24 @@
+
+###Importante para facilitar a explicação:
+-- Alterar o idioma da console
+
+#Atenção a Região AWS
+-- Recomando usar: (Norte da Virgínia) us-east-1
+
+# Usar a opção de ajuda para definir o tamanho do cluster
+-- Fazer o Download do Resumo
+
+### Crie uma Role usando a Política AWS
+Nome da Role: Role_Treinamento_RDFT_ia16_v1
+Política da Role: AmazonRedshiftAllCommandsFullAccess
+
+### Dados para Criação do Cluster
+Nome do Cluster: cluster-rdsft-ia16-v1
+Usuário: ia16
+Senha: Sapo2023
+
+### Explorar um pouco o Painel do Cluster (Dashboard)
+
+###Final da Aula
+-- Criar um Snapshot e Pausa o Cluster
+-- Nome do Snapshot: backupsnapv1
