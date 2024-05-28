@@ -1,7 +1,4 @@
 --## Execute Consultas de Teste
-
-
-
 Query Editor V1
 SELECT * FROM sales LIMIT 5;
 SELECT * FROM users LIMIT 3;

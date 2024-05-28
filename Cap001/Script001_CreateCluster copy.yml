@@ -1,0 +1,53 @@
+
+
+
+https://aws.amazon.com/pt/redshift/whats-new/?nc=sn&loc=5&dn=2&refid=eac6d4d6-69ed-4045-8a51-9e1dc3940086&amazon-redshift-whats-new.sort-by=item.additionalFields.postDateTime&amazon-redshift-whats-new.sort-order=desc&sc_channel=sm&sc_campaign=DB_WhatsNew&sc_publisher=LINKEDIN&sc_geo=GLOBAL&sc_outcome=awareness&trk=DB_WhatsNew&linkId=234926331
+
+
+#Amazon Redshift announces cross-region data sharing support through AWS Lake Formation
+https://aws.amazon.com/pt/about-aws/whats-new/2023/09/amazon-redshift-cross-region-data-sharing-support-aws-lake-formation/
+
+###Importante para facilitar a explicação:
+-- Alterar o idioma da console
+
+#Atenção a Região AWS
+-- Recomando usar: (Norte da Virgínia) us-east-1
+
+# Usar a opção de ajuda para definir o tamanho do cluster
+-- Fazer o Download do Resumo
+
+Criar a Política: Policy_Treinamento_EC2_IP_ia16
+
+# Police_Treinamento_RDFT_ia16
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AllocateAddress",
+                "ec2:AssociateAddress"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+### Crie uma Role usando a Política AWS
+Nome da Role: Role_Treinamento_RDFT_ia16_v1
+Política da Role: AmazonRedshiftAllCommandsFullAccess e AmazonRedshiftFullAccess
+
+### Dados para Criação do Cluster
+Nome do Cluster: cluter-redshift-v1
+Usuário: ia16
+Senha: mudar123
+
+### Explorar um pouco o Painel do Cluster (Dashboard)
+
+###Final da Aula
+-- Criar um Snapshot e Pausa o Cluster
+-- Nome do Snapshot: backupsnapv1
+
+
+

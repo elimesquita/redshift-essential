@@ -1,0 +1,6 @@
+-- Pausa e Resume Cluter RedShift
+
+### Crie uma Role usando a Política AWS
+Nome da Role: Role_Treinamento_RDFT_ia16_v2
+Política da Role: AmazonRedshiftAllCommandsFullAccess
+Obs. O serviço princial aqui será: scheduler.redshift (Redshift - Scheduler)

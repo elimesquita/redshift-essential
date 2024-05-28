@@ -3,7 +3,6 @@ CREATE TABLE departamento(
     nome_departamento varchar(80)
 )
 
-
 --Sintaxe 001
 CREATE TABLE usuario(
     id_usuario int PRIMARY KEY,
@@ -22,6 +21,9 @@ CREATE TABLE IF NOT EXISTS usuario(
 PRIMARY KEY (id_usuario),
 FOREIGN KEY (id_departamento) REFERENCES departamento(id_departamento)
 );
+
+-- DDL da Tabela
+SHOW TABLE usuario;
 
 --Validando as tabelas
 SELECT * FROM departamento;
@@ -110,3 +112,6 @@ DROP TABLE departamento CASCADE;
 
 DROP TABLE usuario;
 DROP TABLE usuario CASCADE;
+
+-- Excluir dados das tabelas do Redshift
+DELETE FROM usuario WHERE id_usuario = 5;
