@@ -1,0 +1,37 @@
+
+## Visão Geral de Ferramantas de Terceiros
+
+
+https://dbeaver.com/2022/04/07/easy-connect-to-aws-datasources/
+https://docs.aws.amazon.com/pt_br/redshift/latest/mgmt/connecting-using-workbench.html
+
+## Configuar o Cluster Redshift com o Elastic IP 
+EndPoint:
+cluster-rdsft-ia16-v1.crjq0i5zuexz.us-east-1.redshift.amazonaws.com:5439/dev
+## Rmover a porta e banco(5439/dev)
+ping cluster-rdsft-ia16-v1.crjq0i5zuexz.us-east-1.redshift.amazonaws.com
+
+
+## Criar o Elastic IP (IP Público)
+Em ECS
+EC2 ==>  Rede e Segurança ==> Editar o nome (Cluster Redshift)
+##Associar Elastic IP ao Redshit
+
+IP: 23.21.165.143
+
+# Configurar o acesso público ao Cluster Redshift
+Cluster ==> Propriedades ==> Configurações de rede e segurança(Publicamente acessível) ==> Editar
+
+##Atenção ao Security Group(sg-85a5999a)
+## Editar Regra de Entrada no SG
+Type: Redshift ==> My IP
+Porta: 5439
+
+#Teste de Conexão[telnet ip[dns] porta]
+telnet cluster-rdsft-ia16-v1.crjq0i5zuexz.us-east-1.redshift.amazonaws.com 5439
+CTRL + ]
+close
+
+OR
+
+CTRL + C
